@@ -136,7 +136,7 @@ var ChapterDecorator = function () {
         null,
         _react2.default.createElement(
           'div',
-          { style: chapterStyles.header },
+          { className: 'chapter-header', style: chapterStyles.header },
           header
         ),
         sections

@@ -72,7 +72,7 @@ export class ChapterDecorator {
   static main(header, sections) {
     return (
       <div>
-        <div style={chapterStyles.header}>{header}</div>
+        <div className="chapter-header" style={chapterStyles.header}>{header}</div>
         {sections}
       </div>
     );

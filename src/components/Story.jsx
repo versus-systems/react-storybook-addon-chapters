@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { baseFonts } from '@storybook/components';
 import Chapter from './Chapter';
 import renderInfoContent from '../utils/info-content';
 import theme from '../theme';
@@ -23,9 +22,6 @@ const defaultProps = {
 };
 
 export const storyStyles = {
-  story: {
-    ...baseFonts,
-  },
   header: {
     marginBottom: 60,
   },
@@ -33,6 +29,7 @@ export const storyStyles = {
     color: theme.grayDarkest,
     fontSize: 36,
     marginBottom: 10,
+    fontWeight: 400,
   },
   subtitle: {
     color: theme.grayDark,
@@ -64,8 +61,8 @@ export class StoryDecorator {
 
   static main(header, chapters) {
     return (
-      <div style={storyStyles.story}>
-        <div style={storyStyles.header}>{header}</div>
+      <div>
+        <div className="story-header" style={storyStyles.header}>{header}</div>
         {chapters}
       </div>
     );

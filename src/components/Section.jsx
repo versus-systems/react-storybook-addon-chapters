@@ -45,15 +45,16 @@ export const sectionButtonStyles = {
 
 export const sectionStyles = {
   container: {
-    marginBottom: 100,
+    marginBottom: 60,
   },
   header: {
-    marginBottom: 60,
+    marginBottom: 20,
   },
   title: {
     color: theme.grayDarkest,
-    fontSize: 18,
+    fontSize: 20,
     marginBottom: 10,
+    fontWeight: 400,
   },
   subtitle: {
     color: theme.grayDark,
@@ -89,7 +90,7 @@ export const sectionStyles = {
 export class SectionDecorator {
   static main(header, component, additional) {
     return (
-      <div style={sectionStyles.container}>
+      <div className="section-container" style={sectionStyles.container}>
         {header}
         {component}
         {additional}

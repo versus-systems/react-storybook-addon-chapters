@@ -101,15 +101,16 @@ var sectionButtonStyles = exports.sectionButtonStyles = {
 
 var sectionStyles = exports.sectionStyles = {
   container: {
-    marginBottom: 100
+    marginBottom: 60
   },
   header: {
-    marginBottom: 60
+    marginBottom: 20
   },
   title: {
     color: _theme2.default.grayDarkest,
-    fontSize: 18,
-    marginBottom: 10
+    fontSize: 20,
+    marginBottom: 10,
+    fontWeight: 400
   },
   subtitle: {
     color: _theme2.default.grayDark,
@@ -151,7 +152,7 @@ var SectionDecorator = function () {
     value: function main(header, component, additional) {
       return _react2.default.createElement(
         'div',
-        { style: sectionStyles.container },
+        { className: 'section-container', style: sectionStyles.container },
         header,
         component,
         additional

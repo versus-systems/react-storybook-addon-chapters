@@ -5,6 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.StoryDecorator = exports.storyStyles = undefined;
 
+var _extends2 = require('babel-runtime/helpers/extends');
+
+var _extends3 = _interopRequireDefault(_extends2);
+
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -25,10 +29,6 @@ var _createClass2 = require('babel-runtime/helpers/createClass');
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _extends2 = require('babel-runtime/helpers/extends');
-
-var _extends3 = _interopRequireDefault(_extends2);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -36,8 +36,6 @@ var _react2 = _interopRequireDefault(_react);
 var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _components = require('@storybook/components');
 
 var _Chapter = require('./Chapter');
 
@@ -71,14 +69,14 @@ var defaultProps = {
 };
 
 var storyStyles = exports.storyStyles = {
-  story: (0, _extends3.default)({}, _components.baseFonts),
   header: {
     marginBottom: 60
   },
   title: {
     color: _theme2.default.grayDarkest,
     fontSize: 36,
-    marginBottom: 10
+    marginBottom: 10,
+    fontWeight: 400
   },
   subtitle: {
     color: _theme2.default.grayDark,
@@ -126,10 +124,10 @@ var StoryDecorator = function () {
     value: function main(header, chapters) {
       return _react2.default.createElement(
         'div',
-        { style: storyStyles.story },
+        null,
         _react2.default.createElement(
           'div',
-          { style: storyStyles.header },
+          { className: 'story-header', style: storyStyles.header },
           header
         ),
         chapters
