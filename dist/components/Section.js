@@ -113,10 +113,11 @@ var sectionStyles = exports.sectionStyles = {
     fontWeight: 400
   },
   subtitle: {
-    color: _theme2.default.grayDark,
+    color: _theme2.default.grayDarkest,
     fontSize: 14,
     marginBottom: 20,
-    marginTop: 0
+    marginTop: 0,
+    lineHeight: '22px'
   },
   buttonContainer: {
     height: 15

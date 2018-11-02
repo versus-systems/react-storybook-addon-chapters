@@ -57,10 +57,11 @@ export const sectionStyles = {
     fontWeight: 400,
   },
   subtitle: {
-    color: theme.grayDark,
+    color: theme.grayDarkest,
     fontSize: 14,
     marginBottom: 20,
     marginTop: 0,
+    lineHeight: '22px',
   },
   buttonContainer: {
     height: 15,
