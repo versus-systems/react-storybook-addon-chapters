@@ -117,7 +117,8 @@ var sectionStyles = exports.sectionStyles = {
     fontSize: 14,
     marginBottom: 20,
     marginTop: 0,
-    lineHeight: '22px'
+    lineHeight: '22px',
+    whiteSpace: 'pre-wrap'
   },
   buttonContainer: {
     height: 15
